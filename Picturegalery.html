@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
 <title>
 Picture Galery
@@ -19,12 +20,35 @@ Picture Galery
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+		<style>
+		body {
+		margin: 0;
+		background: url('background.png');
+		background-size: cover;
+		background-repeat:no-repeat;
+		display: compact;
+		display: compact;
+		}
+		.icon-bar{ background-color: blue;}
+		
+	</style>
 
   
 </head>
 <body>
 
 	<div class="container-fluid">
+	
+	<div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+		
 	<ul class="nav navbar-nav">
 		<li><a href="index.html">Main Menu</a></li>
 		<li><a href="PersonalInformation.html">Personal Information</a></li>
