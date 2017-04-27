@@ -2,28 +2,30 @@
 <html>
 <head>
   
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
   
 <title>
 
 Registration
 
 </title>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
-<link rel="stylesheet" href="bootstrap-3.3.7-dist\css\bootstrap.min.css">
-  <link rel="stylesheet" href="bootstrap-3.3.7-dist\css\mystyle.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist\css\bootstrap.min.css">
+		  <link rel="stylesheet" href="bootstrap-3.3.7-dist\css\mystyle.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <style>
         body {
@@ -35,22 +37,22 @@ Registration
         display: compact;
         }
         
-        .icon-bar{ background-color: #fff;}
+        .icon-bar{ background-color: blue;}
         
     </style>
 
 </head>
 <body>
 
-  
-  <div class="container-fluid">
-	<div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+	  
+	  <div class="container-fluid">
+		<div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
 
     </div>
 
@@ -79,32 +81,51 @@ Registration
     <div style="margin-left: 4px; width: 100%;">
         <a href="Contactme.html" type="button" class="btn btn-primary navbar-btn pull-right" style="margin-left: 4px;">Contact Me</a>
     </div>
+    </div>
 
 <div class="jumbotron">
+
+<legend>Registration Form</legend><br><br><br>
   
-<form method ="POST" id="registration">
+<form class="form-horizontal" method ="POST" encytype="multipart/form-data" id="registration">
 
-<br><br><br>
+<fieldset>
 
-<legend>Registration Form</legend>
+<div class="form-group">
+<label for="inputName" class="col-lg-2 control-label">First Name </label>
+<div class="col-lg-3">
+<input type="text" class="form-control" placeholder="Firstname" id="inputName">
+</div>
+</div>
 
+<div class="form-group">
+<label for="inputName" class="col-lg-2 control-label">Lastname</label>
+<div class="col-lg-3">
+<input type="text" class="form-control" placeholder="Lastname" id="inputSurname">
+</div>
+</div>
 
-First Name : <input type="text" name="firstname" required><br><br>
-
-Last Name : <input type="text" name="lastname" required><br><br>
-
-Gender :<br>
-
+<div class="gender">
+<label for="Gender" class="col-lg-2 control-label">Gender</label>
+<div class="col-lg-3">
  <input type="radio" name="gender" value="Male"checked="checked">Male
  <input type="radio" name="gender" value="Female">Female<br><br>
- 
- Date of Birth :<br>
- <input type="date" name="Date of birth" required><br><br>
- 
- City : <br>
- 
- <select name="Cities">
-    <option value="1"  selected>Adana</option>
+
+</div>
+</div>
+<br><br><br>
+
+<div class="form-group">
+<label for="inputDate" class="col-lg-2 control-label">Date of Birth</label>
+<div class="col-lg-3">
+<input type="date" class="form-control" id="inputDate" value="1970-01-01">
+</div><br><br><br>
+
+<div class="form-group">
+<label for="inputCity" class="col-lg-2 control-label">City</label>
+<div class="col-lg-3">
+<select class="form-control" id="inputCity">
+ <option value="1" selected>Adana</option>
     <option value="2">Adıyaman</option>
     <option value="3">Afyonkarahisar</option>
     <option value="4">Ağrı</option>
@@ -185,22 +206,32 @@ Gender :<br>
     <option value="79">Kilis</option>
     <option value="80">Osmaniye</option>
     <option value="81">Düzce</option>
-</select><br><br>
+</select>
+</div>
+</div>
+ 
+<div class="form-group">
+<label for="inputEmail" class="col-lg-2 control-label" required="required" method="POST">Email</label>
+<div class="col-lg-3">
+<input type="email" class="form-control" placeholder="Email" id="inputEmail">
+</div>
+</div>
+ 
 
-E-mail : <input type="text" name="email" required="required" method="POST"><br>
-Password : <input type="password" name="password" required="required" method="POST"><br><br>
+ <div class="form-group">
+<label for="inputPassword" class="col-lg-2 control-label">Password</label>
+<div class="col-lg-3">
+<input type="password" class="form-control" id="inputPassword" required="required" method="POST" placeholder="Password">
+</div>
+</div>
 
+<div class="form-group">
+<label for="inputText" class="col-lg-2 control-label">About Me</label>
+<div class="col-lg-3">
+<textarea class="form-control" rows="5" id="inputText" placeholder="Write something about you..."></textarea>
+</div>
+</div>
 
-
-About Me : <textarea rows="10" cols="50" name="aboutme" placeholder="Who I am"></textarea><br><br>
-
-Interest : <br>
-
-Sleeping:<input type="checkbox" name="sleeping" > 
-Sleeping More:<input type="checkbox" name="sleepingmore">
-Sleeeeeping:<input type="checkbox" name="sleeeeeping">
-Working Internet programming :) <input type="checkbox" name="workinginternetprogramming">
-<br><br>
 
 Upload Photo :<br><br>
  <input type="file" name="fileToUpload" id="fileToUpload"><br><br>
@@ -209,11 +240,11 @@ Upload Photo :<br><br>
   
 <input type="submit" value="Submit" name="submit" onclick="return alert('Thank you :)')">
 
-
+</fieldset>
 </form>
    </div>
-</div>
-  </div>
+
+
 </body>
 
 </html>
